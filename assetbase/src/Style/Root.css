@@ -1,0 +1,8 @@
+:root{
+    --assetbase-orange: rgba(244, 108, 49, 1);
+    --bg-color: #0A0D14;
+    --text-white: #CDD0D5;
+    --disabled: rgba(49, 53, 63, 1);
+    --nav-link-bg: rgba(255, 255, 255, 0.04);
+    --font-family: "Geist", sans-serif;
+}

@@ -1,0 +1,112 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: var(--font-family);
+  background-color: var(--bg-color);
+}
+.navbar{
+  height: 96px;
+  /* background-color: aqua; */
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0 24px;
+  /* max-width: 1440px; */
+}
+.content{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* background-color: rgba(165, 42, 42, 0.555); */
+  align-items: center;
+  height: 43.79px;
+  width: 100%;
+  
+}
+.nav-logo img{
+  display: flex;
+  align-items: center;
+  padding-bottom: -12px;
+}
+li{
+  list-style: none;
+  text-decoration: none;
+}
+.nav-links{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.link{
+  display: flex;
+  align-items: center;
+  padding: 8px 12px 8px 12px;
+  gap: 8px;
+  background-color: var(--nav-link-bg);
+  color: var(--text-white);
+  border-radius: 8px  8px 0 0;
+  font-size: 14px;
+  text-decoration: none;
+} 
+.ex{
+  border-radius: 8px;
+}
+.link:hover{
+  transition: all .5s ease-in-out;
+  color: var(--assetbase-orange);
+  border-bottom: 1px solid var(--assetbase-orange);
+} 
+.disabled{
+  color: var(--disabled);
+  pointer-events: none;
+  cursor: default;
+}
+.left{
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+
+}
+.right{
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.nav-btn{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  background: var(--assetbase-orange);
+  border-radius: 24px;
+  color: white;
+  font-size: 14px;
+  text-decoration: none;
+}
+.nav-btn:hover{
+  background: var(--bg-color);
+  border: 1px solid var(--assetbase-orange);
+  transition: all .5s ease-in-out;
+  color: var(--assetbase-orange);
+}
+.nav-icons{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.icon{
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 24px;
+  border: 1px solid rgba(49, 53, 63, 1);
+  cursor: pointer;
+}
+.icon:hover{
+  transition: all .5s ease-in-out;
+  color: var(--assetbase-orange);
+  border: 1px solid var(--assetbase-orange);
+}

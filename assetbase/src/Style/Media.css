@@ -50,6 +50,9 @@
     gap: 1rem;
     overflow-x: auto;
   }
+  .right-card-wrapper::-webkit-scrollbar {
+    width: 0;
+  }
   .referral-card {
     flex-direction: row;
     padding: 24px 10px;
@@ -86,16 +89,15 @@
 @media (max-width: 600px) {
   body {
     font-size: 10px;
-    /* background-color: aqua; */
   }
   .nav-links-2 .link {
     padding: 8px 4px;
-    width: 100%;
+    width: 4.7rem;
   }
   .nav-links-2 .active-link {
     padding: 8px 4px;
     flex-direction: column;
-    width: 100% !important;
+    width: 4.7rem;
   }
 
   .brown-card {
@@ -126,6 +128,10 @@
   padding: 0 14px;
 }
   .nav-links-2 .link {
+    padding: 8px 8px;
+    width: 4rem;
+  }
+  .nav-links-2 .active-link {
     padding: 8px 8px;
     width: 4rem;
   }

@@ -1,6 +1,7 @@
 import './Style/App.css';
 import './Style/Root.css';
 import './Style/Dashboard.css';
+import './Style/Media.css';
 import Pages from './Scene/Pages';
 
 function App() {

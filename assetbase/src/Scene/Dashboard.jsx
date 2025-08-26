@@ -1,6 +1,6 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import Navbar from "./Navbar";
+import NavMob from "./NavMob";
 import flag from "../Images/Flag.svg";
 import arrowDownLight from "../Images/Arrow-down-light.svg";
 import Eyeoff from "../Images/Eye-off.svg";
@@ -642,6 +642,7 @@ const Dashboard = () => {
           </div>
         </div>
       </div>
+      <NavMob />
     </div>
   );
 };

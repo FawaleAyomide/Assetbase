@@ -1,0 +1,151 @@
+/* navbar */
+@media (max-width: 1165px) {
+  .content {
+    /* background-color: aqua; */
+  }
+  .navbar .content .right {
+    display: none;
+  }
+  .nav-links-1 {
+    /* display: none; */
+  }
+  .nav-links-2 {
+    /* display: flex; */
+    /* justify-content: space-between; */
+  }
+  .link {
+    /* flex-direction: column; */
+    width: 100%;
+  }
+  .active-link {
+    /* flex-direction: column; */
+  }
+  .hamburger {
+    display: flex;
+  }
+}
+
+@media (max-width: 990px) {
+  .card-content {
+    flex-direction: column;
+    align-items: start;
+    gap: 2rem;
+  }
+  .card-header-right {
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+@media (max-width: 960px) {
+  .card-wrapper {
+    flex-direction: column-reverse;
+  }
+  .left-card-wrapper {
+    width: 100%;
+  }
+  .right-card-wrapper {
+    width: 100%;
+    flex-direction: row;
+    align-items: start;
+    gap: 1rem;
+    overflow-x: auto;
+  }
+  .referral-card {
+    flex-direction: row;
+    padding: 24px 10px;
+  }
+  .referral-card-content {
+    flex-direction: row;
+    gap: 1rem;
+  }
+  .notifications-card {
+    display: none;
+  }
+}
+@media (max-width: 920px) {
+  .navmob-wrapper {
+    display: flex;
+  }
+  .nav-links-1 {
+    display: none;
+  }
+  .nav-links-2 {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 35px 24px 24px 24px;
+  }
+  .nav-links-2 .link {
+    flex-direction: column;
+    width: 100px;
+  }
+  .nav-links-2 .active-link {
+    flex-direction: column;
+  }
+}
+@media (max-width: 600px) {
+  body {
+    font-size: 10px;
+    /* background-color: aqua; */
+  }
+  .nav-links-2 .link {
+    padding: 8px 4px;
+    width: 100%;
+  }
+  .nav-links-2 .active-link {
+    padding: 8px 4px;
+    flex-direction: column;
+    width: 100% !important;
+  }
+
+  .brown-card {
+    width: 20rem;
+    white-space: nowrap;
+  }
+  .referral-card {
+    width: fit-content;
+    padding: 18px;
+  }
+  .referral-card-content img {
+    width: 65px;
+    height: 65px;
+  }
+  .referral-title {
+    width: 15rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .dashboard {
+    padding: 24px 15px;
+  }
+  .card {
+    padding: 24px 18px;
+  }
+  .navbar{
+  padding: 0 14px;
+}
+  .nav-links-2 .link {
+    padding: 8px 8px;
+    width: 4rem;
+  }
+  .nav-links-2 {
+    padding: 35px 15px 24px 15px;
+  }
+  .nav-links-2 .link p,
+  .nav-links-2 .active-link p {
+    font-size: 11px;
+  }
+}
+@media (max-width: 320px) {
+    .nav-links-2 .link {
+        width: 3.3rem;
+    }
+    .nav-links-2 .active-link {
+        width: 3.3rem;
+    }
+    .nav-links-2 .link p,
+    .nav-links-2 .active-link p {
+      font-size: 10px;
+    }
+}

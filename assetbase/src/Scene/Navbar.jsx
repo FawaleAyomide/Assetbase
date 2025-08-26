@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { NavLink, Link } from "react-router-dom";
 import logo from "../Images/Logo.svg";
 import dashboard from "../Images/Dashboard.svg";
@@ -11,6 +12,20 @@ import profile from "../Images/Profile.svg";
 import search from "../Images/Search.svg";
 
 const Navbar = () => {
+  const [burgerClass, setBurgerClass] = useState("burger-bar unclicked");
+  const [menuClass, setMenuClass] = useState("menu hidden");
+  const [isMenuClicked, setIsMenuClicked] = useState(false);
+
+  const updateMenu = () => {
+    if (!isMenuClicked) {
+      setBurgerClass("burger-bar clicked");
+      setMenuClass("menu visible");
+    } else {
+      setBurgerClass("burger-bar unclicked");
+      setMenuClass("menu hidden");
+    }
+  }
+
   return (
     <div className="navbar">
       <div className="content">
@@ -22,7 +37,7 @@ const Navbar = () => {
               </NavLink>
             </li>
           </ul>
-          <ul className="nav-links">
+          <ul className="nav-links-1">
             <li>
               <NavLink
                 to="/dashboard"
@@ -81,6 +96,28 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="right">
+          <Link className="nav-btn">
+            <img src={plus} alt="connect" width="18" height="18" />
+            <p>Connect</p>
+          </Link>
+          <div className="nav-icons">
+            <Link className="icon">
+              <img src={alarm} alt="notification" width="20" height="20" />
+            </Link>
+            <Link className="icon">
+              <img src={profile} alt="profile" width="20" height="20" />
+            </Link>
+            <Link className="icon">
+              <img src={search} alt="search" width="20" height="20" />
+            </Link>
+          </div>
+        </div>
+        <div className="hamburger" onclick={updateMenu}>
+          <div className="burgerClass"></div>
+          <div className="burgerClass"></div>
+          <div className="burgerClass"></div>
+        </div>
+        <div className="menuClass">
           <Link className="nav-btn">
             <img src={plus} alt="connect" width="18" height="18" />
             <p>Connect</p>

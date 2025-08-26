@@ -15,61 +15,86 @@ const Navbar = () => {
     <div className="navbar">
       <div className="content">
         <div className="left">
-        <ul className="nav">
-          <li>
-            <NavLink to="/" className="nav-logo">
-              <img src={logo} alt="App Logo" width="172.45" height="22.89" />
-            </NavLink>
-          </li>
-        </ul>
-        <ul className="nav-links">
-          <li>
-            <NavLink to="/about" className="link">
-              <img src={dashboard} alt="dashboard" width="20" height="20" />
-              <p>Dashboard</p>
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="/about" className="link ex">
-              <img src={wallet} alt="wallet" width="20" height="20" />
-              <p>Wallet</p>
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="/about" className="link disabled">
-              <img src={markets} alt="markets" width="20" height="20" />
-              <p>Markets</p>
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="/about" className="link ex">
-              <img src={liquidity} alt="Liquidity" width="20" height="20" />
-              <p>Liquidity</p>
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="/about" className="link ex">
-              <img src={portfolio} alt="App Logo" width="20" height="20" />
-              <p>Portfolio</p>
-            </NavLink>
-          </li>
-        </ul>
+          <ul className="nav">
+            <li>
+              <NavLink to="/" className="nav-logo">
+                <img src={logo} alt="App Logo" width="172.45" height="22.89" />
+              </NavLink>
+            </li>
+          </ul>
+          <ul className="nav-links">
+            <li>
+              <NavLink
+                to="/dashboard"
+                className={({ isActive }) =>
+                  isActive ? "active-link" : "link"
+                }
+              >
+                <img src={dashboard} alt="dashboard" width="20" height="20" />
+                <p>Dashboard</p>
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/wallet"
+                className={({ isActive }) =>
+                  isActive ? "active-link" : "link ex"
+                }
+              >
+                <img src={wallet} alt="wallet" width="20" height="20" />
+                <p>Wallet</p>
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/markets"
+                className={({ isActive }) =>
+                  isActive ? "active-link" : "link disabled"
+                }
+              >
+                <img src={markets} alt="markets" width="20" height="20" />
+                <p>Markets</p>
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/liquidity"
+                className={({ isActive }) =>
+                  isActive ? "active-link" : "link ex"
+                }
+              >
+                <img src={liquidity} alt="Liquidity" width="20" height="20" />
+                <p>Liquidity</p>
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/portfolio"
+                className={({ isActive }) =>
+                  isActive ? "active-link" : "link ex"
+                }
+              >
+                <img src={portfolio} alt="App Logo" width="20" height="20" />
+                <p>Portfolio</p>
+              </NavLink>
+            </li>
+          </ul>
         </div>
         <div className="right">
           <Link className="nav-btn">
-              <img src={plus} alt="connect" width="18" height="18" />
-              <p>Connect</p>
+            <img src={plus} alt="connect" width="18" height="18" />
+            <p>Connect</p>
           </Link>
           <div className="nav-icons">
-          <Link className="icon">
+            <Link className="icon">
               <img src={alarm} alt="notification" width="20" height="20" />
-          </Link>
-          <Link className="icon">
+            </Link>
+            <Link className="icon">
               <img src={profile} alt="profile" width="20" height="20" />
-          </Link>
-          <Link className="icon">
+            </Link>
+            <Link className="icon">
               <img src={search} alt="search" width="20" height="20" />
-          </Link>
+            </Link>
           </div>
         </div>
       </div>

@@ -1,15 +1,17 @@
-import React from 'react'
-import Navbar from './Navbar'
-import NavMob from './NavMob'
+import React from "react";
+import Navbar from "./Navbar";
+import NavMob from "./NavMob";
 
 const Liquidity = () => {
   return (
     <div>
-        <Navbar />
-        Liquidity
+      <Navbar />
+      <div className="liquidity-container">Liquidity</div>
+      <div className="navmob">
         <NavMob />
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default Liquidity
+export default Liquidity;

@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -9,87 +9,86 @@ body {
   color: var(--text-white);
   font-size: 16px;
 }
-.navbar{
+.navbar {
   height: 96px;
   display: flex;
   align-items: center;
   margin: 0 auto;
   padding: 0 24px;
 }
-.content{
+.content {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   height: 43.79px;
   width: 100%;
-  
 }
-.nav-logo img{
+.nav-logo img {
   display: flex;
   align-items: center;
   padding-bottom: -12px;
 }
-li{
+li {
   list-style: none;
   text-decoration: none;
 }
-.nav-links-1{
+.nav-links-1 {
   display: flex;
   align-items: center;
   gap: 10px;
 }
-.nav-links-2{
+.nav-links-2 {
   display: none;
 }
-.link{
+.link {
   display: flex;
   align-items: center;
   padding: 8px 12px 8px 12px;
   gap: 8px;
   background-color: var(--nav-link-bg);
   color: var(--text-white);
-  border-radius: 8px  8px 0 0;
+  border-radius: 8px 8px 0 0;
   font-size: 14px;
   text-decoration: none;
-} 
-.active-link{
+}
+.active-link {
   display: flex;
   align-items: center;
   padding: 8px 12px 8px 12px;
   gap: 8px;
   background-color: var(--nav-link-bg);
-  border-radius: 8px  8px 0 0;
+  border-radius: 8px 8px 0 0;
   font-size: 14px;
   text-decoration: none;
   border-bottom: 1px solid var(--assetbase-orange);
   color: var(--assetbase-orange);
 }
-.ex{
+.ex {
   border-radius: 8px;
 }
-.link:hover{
-  border-radius: 8px  8px 0 0;
+.link:hover {
+  border-radius: 8px 8px 0 0;
   /* transition: all .5s ease-in-out; */
   color: var(--assetbase-orange);
   border-bottom: 1px solid var(--assetbase-orange);
-} 
-.disabled{
+}
+.disabled {
   color: var(--disabled);
   pointer-events: none;
   cursor: default;
 }
-.left{
+.left {
   display: flex;
   align-items: center;
   gap: 2rem;
 }
-.right{
+.right {
   display: flex;
   align-items: center;
   gap: 2rem;
 }
-.nav-btn{
+.nav-btn {
   display: flex;
   align-items: center;
   gap: 8px;
@@ -100,18 +99,18 @@ li{
   font-size: 14px;
   text-decoration: none;
 }
-.nav-btn:hover{
+.nav-btn:hover {
   background: var(--bg-color);
   border: 1px solid var(--assetbase-orange);
-  transition: all .5s ease-in-out;
+  transition: all 0.5s ease-in-out;
   color: var(--assetbase-orange);
 }
-.nav-icons{
+.nav-icons {
   display: flex;
   align-items: center;
   gap: 1rem;
 }
-.icon{
+.icon {
   display: flex;
   align-items: center;
   padding: 10px;
@@ -119,15 +118,15 @@ li{
   border: 1px solid rgba(49, 53, 63, 1);
   cursor: pointer;
 }
-.icon:hover{
-  transition: all .5s ease-in-out;
+.icon:hover {
+  transition: all 0.5s ease-in-out;
   color: var(--assetbase-orange);
   border: 1px solid var(--assetbase-orange);
 }
-.menuClass{
+.menuClass {
   display: none;
 }
-.hamburger{
+.hamburger {
   height: 46px;
   width: 54px;
   display: none;
@@ -139,11 +138,17 @@ li{
   padding: 8px;
   background-color: var(--card-bg);
   border-radius: 12px;
-
 }
-.burgerClass{
+.burgerClass {
   width: 22px;
   height: 3px;
   background-color: var(--text-white);
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.wallet,
+.dashboard-container,
+.markets,
+.portfolio, .liquidity-container {
+  height: 100vh;
 }

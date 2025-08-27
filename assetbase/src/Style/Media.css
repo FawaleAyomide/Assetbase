@@ -1,24 +1,10 @@
 /* navbar */
 @media (max-width: 1165px) {
-  .content {
-    /* background-color: aqua; */
-  }
   .navbar .content .right {
     display: none;
   }
-  .nav-links-1 {
-    /* display: none; */
-  }
-  .nav-links-2 {
-    /* display: flex; */
-    /* justify-content: space-between; */
-  }
   .link {
-    /* flex-direction: column; */
     width: 100%;
-  }
-  .active-link {
-    /* flex-direction: column; */
   }
   .hamburger {
     display: flex;
@@ -76,7 +62,7 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
-    padding: 35px 24px 24px 24px;
+    padding: 18px 24px 18px 24px;
   }
   .nav-links-2 .link {
     flex-direction: column;
@@ -87,19 +73,26 @@
   }
 }
 @media (max-width: 600px) {
-  body {
-    font-size: 10px;
+  .nav-links-2 {
+    padding: 18px 20px 18px 20px !important;
   }
   .nav-links-2 .link {
     padding: 8px 4px;
-    width: 4.7rem;
+    width: 4.5rem;
   }
   .nav-links-2 .active-link {
     padding: 8px 4px;
     flex-direction: column;
-    width: 4.7rem;
+    width: 4.5rem;
   }
-
+  .nav-links-2 .link p,
+  .nav-links-2 .active-link p {
+    font-size: 10px;
+  }
+  .card-header-right{
+        gap: 0;
+    justify-content: space-between;
+}
   .brown-card {
     width: 20rem;
     white-space: nowrap;
@@ -136,11 +129,21 @@
     width: 4rem;
   }
   .nav-links-2 {
-    padding: 35px 15px 24px 15px;
+    padding: 15px 10px 15px 10px !important;
   }
   .nav-links-2 .link p,
   .nav-links-2 .active-link p {
     font-size: 11px;
+  }
+  .opt p{
+    font-size: 12px;
+  }
+  .trending .sub-title{
+    font-size: 10px;
+
+  }
+  .view-all{
+   white-space: nowrap;
   }
 }
 @media (max-width: 320px) {

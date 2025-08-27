@@ -18,7 +18,7 @@ import referral from "../Images/Referral.svg";
 
 const Dashboard = () => {
   return (
-    <div>
+    <div className="dashboard-container">
       <Navbar />
       <div className="dashboard">
         <div className="dashboard-wrapper">
@@ -609,7 +609,12 @@ const Dashboard = () => {
               </div>
               <div className="referral-card">
                 <div className="referral-card-content">
-                  <img src={referral} alt="referral-icon" width="78" height="78" />
+                  <img
+                    src={referral}
+                    alt="referral-icon"
+                    width="78"
+                    height="78"
+                  />
                   <div className="referral-text">
                     <p className="referral-title">
                       Invite 5x friends and get gains on multiple things in the
@@ -622,19 +627,16 @@ const Dashboard = () => {
                 <div className="notifications-card-content">
                   <div className="notifications-header">
                     <p className="notifications-title">Notifications</p>
-                    <p className="notifications-text">Catch up on your notifications</p>
+                    <p className="notifications-text">
+                      Catch up on your notifications
+                    </p>
                   </div>
                   <div className="notification-wrapper">
-                  <div className="notification">
-                  </div>
-                  <div className="notification">
-                  </div>
-                  <div className="notification">
-                  </div>
-                  <div className="notification">
-                  </div>
-                  <div className="notification">
-                  </div>
+                    <div className="notification"></div>
+                    <div className="notification"></div>
+                    <div className="notification"></div>
+                    <div className="notification"></div>
+                    <div className="notification"></div>
                   </div>
                 </div>
               </div>
@@ -642,7 +644,9 @@ const Dashboard = () => {
           </div>
         </div>
       </div>
-      <NavMob />
+      <div className="navmob">
+        <NavMob />
+      </div>
     </div>
   );
 };

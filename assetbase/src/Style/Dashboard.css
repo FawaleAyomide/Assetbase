@@ -1,3 +1,11 @@
+.dashboard-container{
+    overflow: visible;
+}
+.navmob{
+    position: sticky;
+    bottom: 0;
+    background-color: var(--bg-color);
+}
 .dashboard{
     padding: 24px;
 }

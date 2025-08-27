@@ -1,5 +1,6 @@
 {
   "dependencies": {
-    "@remixicon/react": "^4.6.0"
+    "@remixicon/react": "^4.6.0",
+    "react-fast-marquee": "^1.6.5"
   }
 }

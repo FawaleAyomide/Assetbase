@@ -1,0 +1,83 @@
+.markets{
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.markets .header p{
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: -2%;
+}
+.markets-wrapper{
+    display: flex;
+    align-items: center;
+    padding: 15px 24px 15px 0;
+    border-radius: 4.21px;
+    background-color: var(--light-bg);
+    overflow: hidden;
+}
+.ticker-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+}
+.fire{
+    background-color: var(--light-bg);
+    z-index: 3;
+    overflow: hidden;
+    height: 100%;
+    padding: 0 15px;
+}
+.pairs {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5rem;
+    animation: ticker 15s linear infinite;
+}    
+.ticker-wrapper:hover .pairs{
+    animation-play-state: paused;
+}
+
+@keyframes ticker {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+.pairs p{
+    white-space: nowrap;
+    font-size: 12px;
+    font-weight: 500;
+}
+.pairs .profit span{
+    color: var(--ticker-green);
+    font-weight: 400;
+    margin-left: .3rem;
+}
+.pairs .loss span{
+    color: var(--ticker-red);
+    font-weight: 400;
+    margin-left: .3rem;
+}
+.markets-card-wrapper{
+    display: flex;
+    justify-content: space-between;
+    padding: 24px;
+    height: fit-content;
+    border-radius: 12px;
+    background-color: var(--card-bg);
+}
+.markets-card-wrapper .card{
+    width: 49%;
+    padding: 15px 24px 5px 24px;
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid var(--light-stroke);
+}
+.markets-card-wrapper .card .trending{
+    gap: 15px;
+}

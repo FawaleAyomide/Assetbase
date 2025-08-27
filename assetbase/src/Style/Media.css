@@ -50,6 +50,17 @@
   .notifications-card {
     display: none;
   }
+
+  /* Markets */
+  .markets-card-wrapper {
+    flex-direction: column;
+  }
+  .markets-card-wrapper .card {
+    width: 100% !important;
+  }
+  .markets-card-wrapper .card:first-child {
+    margin-bottom: 1.2rem;
+  }
 }
 @media (max-width: 920px) {
   .navmob-wrapper {
@@ -89,10 +100,10 @@
   .nav-links-2 .active-link p {
     font-size: 10px;
   }
-  .card-header-right{
-        gap: 0;
+  .card-header-right {
+    gap: 0;
     justify-content: space-between;
-}
+  }
   .brown-card {
     width: 20rem;
     white-space: nowrap;
@@ -117,9 +128,9 @@
   .card {
     padding: 24px 18px;
   }
-  .navbar{
-  padding: 0 14px;
-}
+  .navbar {
+    padding: 0 14px;
+  }
   .nav-links-2 .link {
     padding: 8px 8px;
     width: 4rem;
@@ -135,26 +146,25 @@
   .nav-links-2 .active-link p {
     font-size: 11px;
   }
-  .opt p{
+  .opt p {
     font-size: 12px;
   }
-  .trending .sub-title{
+  .trending .sub-title {
     font-size: 10px;
-
   }
-  .view-all{
-   white-space: nowrap;
+  .view-all {
+    white-space: nowrap;
   }
 }
 @media (max-width: 320px) {
-    .nav-links-2 .link {
-        width: 3.3rem;
-    }
-    .nav-links-2 .active-link {
-        width: 3.3rem;
-    }
-    .nav-links-2 .link p,
-    .nav-links-2 .active-link p {
-      font-size: 10px;
-    }
+  .nav-links-2 .link {
+    width: 3.3rem;
+  }
+  .nav-links-2 .active-link {
+    width: 3.3rem;
+  }
+  .nav-links-2 .link p,
+  .nav-links-2 .active-link p {
+    font-size: 10px;
+  }
 }

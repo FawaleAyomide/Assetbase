@@ -64,7 +64,7 @@ const Navbar = () => {
               <NavLink
                 to="/markets"
                 className={({ isActive }) =>
-                  isActive ? "active-link" : "link disabled"
+                  isActive ? "active-link" : "link"
                 }
               >
                 <RiStockFill size={18} />

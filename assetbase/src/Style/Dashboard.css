@@ -208,13 +208,11 @@
     flex-direction: column;
     gap: 1.5rem;
     width: 100%;
-    /* background-color: goldenrod; */
 }
 .middle-wrapper{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* background-color: aqua; */
     width: 100%;
     gap: 8rem;
     white-space: nowrap;
@@ -265,7 +263,6 @@
 .last-card-progress{
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
     gap: 14px;
     padding: 5px 8px;
     padding-top: 1rem;

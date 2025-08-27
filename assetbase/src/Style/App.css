@@ -152,3 +152,6 @@ li {
 .portfolio, .liquidity-container {
   height: 100vh;
 }
+.icon{
+  color: white;
+}

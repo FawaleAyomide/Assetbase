@@ -1,15 +1,15 @@
 import { useState } from "react";
 import { NavLink, Link } from "react-router-dom";
 import logo from "../Images/Logo.svg";
-import dashboard from "../Images/Dashboard.svg";
-import wallet from "../Images/Wallet.svg";
-import markets from "../Images/Markets.svg";
-import liquidity from "../Images/Liquidity.svg";
-import portfolio from "../Images/Portfolio.svg";
-import plus from "../Images/Plus.svg";
-import alarm from "../Images/Alarm.svg";
-import profile from "../Images/Profile.svg";
-import search from "../Images/Search.svg";
+import { RiLayoutGridLine } from "@remixicon/react";
+import { RiWalletLine } from "@remixicon/react";
+import { RiBox3Line } from "@remixicon/react";
+import { RiStockFill } from "@remixicon/react";
+import { RiBriefcaseLine } from "@remixicon/react";
+import { RiAddFill } from "@remixicon/react";
+import { RiNotification3Line } from "@remixicon/react";
+import { RiUser2Line } from "@remixicon/react";
+import { RiSearch2Line } from "@remixicon/react";
 
 const Navbar = () => {
   const [burgerClass, setBurgerClass] = useState("burger-bar unclicked");
@@ -24,7 +24,7 @@ const Navbar = () => {
       setBurgerClass("burger-bar unclicked");
       setMenuClass("menu hidden");
     }
-  }
+  };
 
   return (
     <div className="navbar">
@@ -45,7 +45,7 @@ const Navbar = () => {
                   isActive ? "active-link" : "link"
                 }
               >
-                <img src={dashboard} alt="dashboard" width="20" height="20" />
+                <RiLayoutGridLine size={18} />
                 <p>Dashboard</p>
               </NavLink>
             </li>
@@ -56,7 +56,7 @@ const Navbar = () => {
                   isActive ? "active-link" : "link ex"
                 }
               >
-                <img src={wallet} alt="wallet" width="20" height="20" />
+                <RiWalletLine size={18} />
                 <p>Wallet</p>
               </NavLink>
             </li>
@@ -67,7 +67,7 @@ const Navbar = () => {
                   isActive ? "active-link" : "link disabled"
                 }
               >
-                <img src={markets} alt="markets" width="20" height="20" />
+                <RiStockFill size={18} />
                 <p>Markets</p>
               </NavLink>
             </li>
@@ -78,7 +78,7 @@ const Navbar = () => {
                   isActive ? "active-link" : "link ex"
                 }
               >
-                <img src={liquidity} alt="Liquidity" width="20" height="20" />
+                <RiBox3Line size={18} />
                 <p>Liquidity</p>
               </NavLink>
             </li>
@@ -89,7 +89,7 @@ const Navbar = () => {
                   isActive ? "active-link" : "link ex"
                 }
               >
-                <img src={portfolio} alt="App Logo" width="20" height="20" />
+                <RiBriefcaseLine size={18} />
                 <p>Portfolio</p>
               </NavLink>
             </li>
@@ -97,18 +97,18 @@ const Navbar = () => {
         </div>
         <div className="right">
           <Link className="nav-btn">
-            <img src={plus} alt="connect" width="18" height="18" />
+            <RiAddFill size={18} />
             <p>Connect</p>
           </Link>
           <div className="nav-icons">
             <Link className="icon">
-              <img src={alarm} alt="notification" width="20" height="20" />
+              <RiNotification3Line size={18} />
             </Link>
             <Link className="icon">
-              <img src={profile} alt="profile" width="20" height="20" />
+              <RiUser2Line size={18} />
             </Link>
             <Link className="icon">
-              <img src={search} alt="search" width="20" height="20" />
+              <RiSearch2Line size={18} />
             </Link>
           </div>
         </div>
@@ -119,18 +119,18 @@ const Navbar = () => {
         </div>
         <div className="menuClass">
           <Link className="nav-btn">
-            <img src={plus} alt="connect" width="18" height="18" />
+            <RiAddFill size={18} />
             <p>Connect</p>
           </Link>
           <div className="nav-icons">
             <Link className="icon">
-              <img src={alarm} alt="notification" width="20" height="20" />
+              <RiNotification3Line size={18} />
             </Link>
             <Link className="icon">
-              <img src={profile} alt="profile" width="20" height="20" />
+              <RiUser2Line size={18} />
             </Link>
             <Link className="icon">
-              <img src={search} alt="search" width="20" height="20" />
+              <RiSearch2Line size={18} />
             </Link>
           </div>
         </div>

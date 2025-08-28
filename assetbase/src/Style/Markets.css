@@ -1,83 +1,147 @@
-.markets{
-    padding: 24px;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
+.markets {
+  padding: 24px 24px 36px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
 }
-.markets .header p{
-    font-size: 24px;
-    font-weight: 600;
-    line-height: 20px;
-    letter-spacing: -2%;
+.markets .header p {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: -2%;
 }
-.markets-wrapper{
-    display: flex;
-    align-items: center;
-    padding: 15px 24px 15px 0;
-    border-radius: 4.21px;
-    background-color: var(--light-bg);
-    overflow: hidden;
+.markets-wrapper {
+  display: flex;
+  align-items: center;
+  padding: 15px 24px 15px 0;
+  border-radius: 4.21px;
+  background-color: var(--light-bg);
+  overflow: hidden;
 }
-.ticker-wrapper{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 1.5rem;
+.ticker-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
 }
-.fire{
-    background-color: var(--light-bg);
-    z-index: 3;
-    overflow: hidden;
-    height: 100%;
-    padding: 0 15px;
+.fire {
+  background-color: var(--light-bg);
+  z-index: 3;
+  overflow: hidden;
+  height: 100%;
+  padding: 0 15px;
 }
 .pairs {
-    display: flex;
-    justify-content: space-between;
-    gap: 1.5rem;
-    animation: ticker 15s linear infinite;
-}    
-.ticker-wrapper:hover .pairs{
-    animation-play-state: paused;
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+  animation: ticker 15s linear infinite;
+}
+.ticker-wrapper:hover .pairs {
+  animation-play-state: paused;
 }
 
 @keyframes ticker {
-    0%{
-        transform: translateX(0);
-    }
-    100%{
-        transform: translateX(-100%);
-    }
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }
-.pairs p{
-    white-space: nowrap;
-    font-size: 12px;
-    font-weight: 500;
+.pairs p {
+  white-space: nowrap;
+  font-size: 12px;
+  font-weight: 500;
 }
-.pairs .profit span{
-    color: var(--ticker-green);
-    font-weight: 400;
-    margin-left: .3rem;
+.pairs .profit span {
+  color: var(--ticker-green);
+  font-weight: 400;
+  margin-left: 0.3rem;
 }
-.pairs .loss span{
-    color: var(--ticker-red);
-    font-weight: 400;
-    margin-left: .3rem;
+.pairs .loss span {
+  color: var(--ticker-red);
+  font-weight: 400;
+  margin-left: 0.3rem;
 }
-.markets-card-wrapper{
+.profit {
+  color: var(--ticker-green);
+}
+.loss {
+  color: var(--ticker-red);
+}
+.markets-card-wrapper {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    gap: 1.5rem;
     padding: 24px;
     height: fit-content;
     border-radius: 12px;
     background-color: var(--card-bg);
+    overflow: visible;
+    margin-bottom: 1rem;
 }
-.markets-card-wrapper .card{
-    width: 49%;
-    padding: 15px 24px 5px 24px;
-    background-color: rgba(255, 255, 255, 0);
-    border: 1px solid var(--light-stroke);
+.markets-card {
+  display: flex;
+  justify-content: space-between;
+  height: fit-content;
 }
-.markets-card-wrapper .card .trending{
-    gap: 15px;
+.markets-card .card {
+  width: 49%;
+  padding: 15px 24px 5px 24px;
+  background-color: rgba(255, 255, 255, 0);
+  border: 1px solid var(--light-stroke);
+}
+.markets-card .card .trending {
+  gap: 15px;
+}
+.all-asset-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.table-wrapper {
+    overflow: auto;
+    max-height: 300px;
+    position: relative;
+}
+.table-wrapper::-webkit-scrollbar {
+    width: 0;
+}
+table {
+    width: 100%;
+    text-align: left;
+    place-items: center;
+    margin: 0;
+    font-size: 14px;
+    border-spacing: 0;
+    overflow: visible !important;
+}
+th,
+td {
+  padding: 15px 15px;
+  text-align: left;
+  border-bottom: 1px solid var(--grey-text);
+}
+thead {
+  background-color: var(--bg-base);
+  color: white;
+  position: sticky;
+  letter-spacing: 1px;
+}
+
+tr:nth-child(1) {
+  border-top-left-radius: 50%;
+  /* background-color: #f2f2f2; */
+}
+.border-left{
+    border-radius: 12px 0 0 0;
+}
+.border-right{
+    border-radius: 0 12px 0 0;
+}
+.volume {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
 }

@@ -1,5 +1,5 @@
-/* navbar */
 @media (max-width: 1165px) {
+  /* navbar */
   .navbar .content .right {
     display: none;
   }
@@ -57,9 +57,13 @@
   }
   .markets-card-wrapper .card {
     width: 100% !important;
+    padding-bottom: 1.1rem !important;
   }
   .markets-card-wrapper .card:first-child {
     margin-bottom: 1.2rem;
+  }
+  .markets-card {
+    flex-direction: column;
   }
 }
 @media (max-width: 920px) {
@@ -82,6 +86,14 @@
   .nav-links-2 .active-link {
     flex-direction: column;
   }
+  /* markets */
+  .large{
+    overflow: auto !important;
+  }
+  table{
+    /* overflow-x: auto !important; */
+  }
+
 }
 @media (max-width: 600px) {
   .nav-links-2 {
@@ -118,6 +130,27 @@
   }
   .referral-title {
     width: 15rem;
+  }
+  /* Markets */
+  .markets {
+    padding: 24px 15px !important;
+  }
+  .markets-card-wrapper {
+    padding: 24px 15px 24px 15px !important;
+  }
+  .large {
+    display: none;
+  }
+  .small {
+    display: block !important;
+    width: 100%;
+  }
+  .border-right {
+    padding-left: 1rem;
+    white-space: nowrap;
+  }
+  .name {
+    padding-left: -1rem !important;
   }
 }
 
@@ -166,5 +199,17 @@
   .nav-links-2 .link p,
   .nav-links-2 .active-link p {
     font-size: 10px;
+  }
+
+  /* markets */
+  .small {
+    overflow-x: hidden !important;
+  }
+  table {
+    overflow-x: auto;
+  }
+  th,
+  td {
+    padding: 15px 10px !important;
   }
 }

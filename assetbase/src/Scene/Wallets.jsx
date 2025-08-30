@@ -1,11 +1,11 @@
-import React from "react";
 import Navbar from "./Navbar";
+import React from "react";
 import NavMob from "./NavMob";
 
 const Wallets = () => {
   return (
     <div>
-      <Navbar />
+         <Navbar />
       <div className="wallet">Wallets</div>
       <div className="navmob">
         <NavMob />
@@ -15,3 +15,4 @@ const Wallets = () => {
 };
 
 export default Wallets;
+

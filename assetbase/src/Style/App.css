@@ -148,10 +148,30 @@ li {
 
 .wallet,
 .dashboard-container,
-.markets,
 .portfolio, .liquidity-container {
-  height: 100vh;
+  height: 100vh !important;
 }
 .icon{
   color: white;
 }
+
+/* testing */
+.ticker-container {
+  position: relative;
+}
+
+.ticker {
+  display: inline-flex;
+  animation: ticker-scroll 30s linear infinite;
+}
+
+@keyframes ticker-scroll {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+

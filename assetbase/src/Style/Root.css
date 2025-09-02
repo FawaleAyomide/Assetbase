@@ -1,6 +1,7 @@
 :root{
     --assetbase-orange: rgba(244, 108, 49, 1);
     --card-bg: rgba(22, 25, 34, 1);
+    --bg-card: rgba(22, 25, 34, 1);
     --light-bg: rgba(34, 36, 49, 1);
     --ticker-green: rgba(56, 199, 147, 1);
     --ticker-red: rgba(223, 28, 65, 1);
@@ -10,6 +11,8 @@
     --gray-text: rgba(205, 208, 213, 1);
     --grey-text: rgba(205, 208, 213, 0.349);
     --brown-bg: rgba(29, 21, 18, 1);
+    --neutral-800: rgba(22, 25, 34, 1);
+    --neutral-300: rgba(205, 208, 213, 1);
     --neutral: rgba(134, 140, 152, 1);
     --blue-shade: rgba(5, 30, 62, 1);
     --text-blue-light: rgba(194, 214, 255, 1);

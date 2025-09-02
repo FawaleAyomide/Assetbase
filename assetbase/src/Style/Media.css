@@ -21,6 +21,13 @@
     width: 100%;
     justify-content: space-between;
   }
+  /* liquidity */
+  .liquidity-btn {
+    display: none !important;
+  }
+  .t-1 {
+    width: 100% !important;
+  }
 }
 @media (max-width: 960px) {
   .card-wrapper {
@@ -87,13 +94,14 @@
     flex-direction: column;
   }
   /* markets */
-  .large{
+  .large {
     overflow: auto !important;
   }
-  table{
-    /* overflow-x: auto !important; */
+}
+@media (max-width: 785px) {
+  .t-1 p {
+    width: 100% !important;
   }
-
 }
 @media (max-width: 600px) {
   .nav-links-2 {
@@ -152,6 +160,17 @@
   .name {
     padding-left: -1rem !important;
   }
+  /* liquidity */
+  .liquidity-container {
+    padding: 24px 15px !important;
+    display: flex;
+    flex-direction: column;
+    gap: 1.1rem;
+  }
+  .lc-1 h3 {
+    font-size: 16px;
+    width: 100% !important;
+  }
 }
 
 @media (max-width: 400px) {
@@ -188,6 +207,11 @@
   .view-all {
     white-space: nowrap;
   }
+  /* Liquidity */
+  .liquidity-wrapper {
+    padding: 24px 18px !important;
+  }
+
 }
 @media (max-width: 320px) {
   .nav-links-2 .link {
@@ -212,4 +236,8 @@
   td {
     padding: 15px 10px !important;
   }
+  /* Liquidity */
+  .grid-1{
+    grid-template-columns: auto !important;
+}
 }

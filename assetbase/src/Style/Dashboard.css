@@ -22,7 +22,6 @@
 .card-wrapper{
     display: flex;
     gap: 16px;
-    /* width: 100%; */
 }
 .left-card-wrapper{
     display: flex;

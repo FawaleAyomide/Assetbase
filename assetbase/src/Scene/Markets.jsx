@@ -1,3 +1,5 @@
+
+// import { Outlet } from "react-router-dom";
 import { useState, useEffect } from "react";
 import Navbar from "./Navbar";
 import NavMob from "./NavMob";
@@ -44,6 +46,7 @@ const Markets = () => {
   return (
     <div>
       <Navbar />
+      {/* <Outlet /> */}
       <div className="markets">
         <div className="header">
           <p>Markets</p>

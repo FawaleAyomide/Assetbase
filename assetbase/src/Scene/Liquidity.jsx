@@ -1,11 +1,16 @@
+import { useState } from "react";
 import { NavLink, Outlet } from "react-router-dom";
 import Navbar from "./Navbar";
 import NavMob from "./NavMob";
 import GradientLine from "../Images/Gradient Lines.svg";
 import LogoBg from "../Images/LogoBg.svg";
 import { RiBox3Line } from "@remixicon/react";
+import CompanySpec from "./CompanySpec";
 
 const Liquidity = () => {
+  const [showOverlay, setShowOverlay] = useState(false);
+
+
   return (
     <div>
       <Navbar />
@@ -25,11 +30,21 @@ const Liquidity = () => {
           </div>
             <img src={GradientLine} alt="gradient-line" className="gradient-line" height="210" width="550" />
             <img src={LogoBg} alt="large-logo" className="logo-bg" height="170" width="170.26" />
-            <div className="liquidity-btn">
+            <div className="liquidity-btn" onClick={() => setShowOverlay(true)}>
             <RiBox3Line size={18} />
             <p>Add Liquidity</p>
             </div>
         </div>
+        {/* overlay */}
+
+        {/* <div className="add-liquidity">
+          <div className="add-liq-top">
+            <h6>Add Liquidity</h6>
+            <p>Invest in high-yield pools and company funding rounds</p>
+          </div>
+        </div> */}
+        {/* overlay ends */}
+
         <div className="liquidity-wrapper">
           <div className="grid">
               <NavLink

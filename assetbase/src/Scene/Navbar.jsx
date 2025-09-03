@@ -37,63 +37,51 @@ const Navbar = () => {
               </NavLink>
             </li>
           </ul>
-          <ul className="nav-links-1">
-            <li>
-              <NavLink
-                to="/dashboard"
-                className={({ isActive }) =>
-                  isActive ? "active-link" : "link"
-                }
-              >
-                <RiLayoutGridLine size={18} />
-                <p>Dashboard</p>
-              </NavLink>
-            </li>
-            <li>
-              <NavLink
-                to="/wallet"
-                className={({ isActive }) =>
-                  isActive ? "active-link" : "link ex"
-                }
-              >
-                <RiWalletLine size={18} />
-                <p>Wallet</p>
-              </NavLink>
-            </li>
-            <li>
-              <NavLink
-                to="/markets"
-                className={({ isActive }) =>
-                  isActive ? "active-link" : "link"
-                }
-              >
-                <RiStockFill size={18} />
-                <p>Markets</p>
-              </NavLink>
-            </li>
-            <li>
-              <NavLink
-                to="/liquidity"
-                className={({ isActive }) =>
-                  isActive ? "active-link" : "link ex"
-                }
-              >
-                <RiBox3Line size={18} />
-                <p>Liquidity</p>
-              </NavLink>
-            </li>
-            <li>
-              <NavLink
-                to="/portfolio"
-                className={({ isActive }) =>
-                  isActive ? "active-link" : "link ex"
-                }
-              >
-                <RiBriefcaseLine size={18} />
-                <p>Portfolio</p>
-              </NavLink>
-            </li>
-          </ul>
+          <div className="nav-links-1">
+            <NavLink
+              to="/"
+              end
+              // to="/dashboard"
+              className={({ isActive }) => (isActive ? "active-link" : "link")}
+            >
+              <RiLayoutGridLine size={18} />
+              <p>Dashboard</p>
+            </NavLink>
+            <NavLink
+              to="/wallet"
+              className={({ isActive }) =>
+                isActive ? "active-link" : "link ex"
+              }
+            >
+              <RiWalletLine size={18} />
+              <p>Wallet</p>
+            </NavLink>
+            <NavLink
+              to="/markets"
+              className={({ isActive }) => (isActive ? "active-link" : "link")}
+            >
+              <RiStockFill size={18} />
+              <p>Markets</p>
+            </NavLink>
+            <NavLink
+              to="/liquidity"
+              className={({ isActive }) =>
+                isActive ? "active-link" : "link ex"
+              }
+            >
+              <RiBox3Line size={18} />
+              <p>Liquidity</p>
+            </NavLink>
+            <NavLink
+              to="/portfolio"
+              className={({ isActive }) =>
+                isActive ? "active-link" : "link ex"
+              }
+            >
+              <RiBriefcaseLine size={18} />
+              <p>Portfolio</p>
+            </NavLink>
+          </div>
         </div>
         <div className="right">
           <Link className="nav-btn">

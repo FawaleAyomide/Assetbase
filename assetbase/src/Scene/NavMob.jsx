@@ -11,7 +11,8 @@ const NavMob = () => {
       <ul className="nav-links-2">
         <li>
               <NavLink
-                to="/dashboard"
+                to="/"
+                end
                 className={({ isActive }) =>
                   isActive ? "active-link" : "link"
                 }

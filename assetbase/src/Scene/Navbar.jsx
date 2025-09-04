@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { NavLink, Link } from "react-router-dom";
+import Hamburger from "hamburger-react";
 import logo from "../Images/Logo.svg";
 import { RiLayoutGridLine } from "@remixicon/react";
 import { RiWalletLine } from "@remixicon/react";
@@ -101,10 +102,9 @@ const Navbar = () => {
           </div>
         </div>
         <div className="hamburger" onclick={updateMenu}>
-          <div className="burgerClass"></div>
-          <div className="burgerClass"></div>
-          <div className="burgerClass"></div>
+        <Hamburger size={25} toggled={isMenuClicked} toggle={setIsMenuClicked} />
         </div>
+        {isMenuClicked &&
         <div className="menuClass">
           <Link className="nav-btn">
             <RiAddFill size={18} />
@@ -122,6 +122,7 @@ const Navbar = () => {
             </Link>
           </div>
         </div>
+        }
       </div>
     </div>
   );

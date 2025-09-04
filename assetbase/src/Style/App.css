@@ -125,25 +125,29 @@ li {
 }
 .menuClass {
   display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 5;
+  background-color: var(--blur-bg);
+  backdrop-filter: blur(24px);
 }
 .hamburger {
   height: 46px;
   width: 54px;
   display: none;
-  flex-direction: column;
-  gap: 5px;
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  padding: 8px;
   background-color: var(--card-bg);
   border-radius: 12px;
-}
-.burgerClass {
-  width: 22px;
-  height: 3px;
-  background-color: var(--text-white);
-  transition: all 0.3s ease-in-out;
+  z-index: 6;
 }
 
 .wallet,

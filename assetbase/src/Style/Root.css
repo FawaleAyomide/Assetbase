@@ -12,8 +12,11 @@
     --grey-text: rgba(205, 208, 213, 0.349);
     --brown-bg: rgba(29, 21, 18, 1);
     --neutral-800: rgba(22, 25, 34, 1);
+    --neutral-500: rgba(82, 88, 102, 1);
     --neutral-300: rgba(205, 208, 213, 1);
     --blur-bg: rgba(26, 26, 26, 0.2);
+    --pt-bg: rgba(255, 255, 255, 0.04);
+    --pt-card-bg: rgba(34, 36, 49, 0.5);
     --neutral: rgba(134, 140, 152, 1);
     --blue-shade: rgba(5, 30, 62, 1);
     --text-blue-light: rgba(194, 214, 255, 1);

@@ -6,7 +6,8 @@
   .link {
     width: 100%;
   }
-  .hamburger, .menuClass {
+  .hamburger,
+  .menuClass {
     display: flex;
   }
 }
@@ -72,6 +73,9 @@
   .markets-card {
     flex-direction: column;
   }
+  .large {
+    overflow: auto !important;
+  }
 }
 @media (max-width: 920px) {
   .navmob-wrapper {
@@ -93,10 +97,13 @@
   .nav-links-2 .active-link {
     flex-direction: column;
   }
-  /* markets */
-  .large {
-    overflow: auto !important;
+  
+}
+@media (max-width: 900px) {
+  .portfolio-top{
+    flex-direction: column;
   }
+  
 }
 @media (max-width: 785px) {
   .t-1 p {
@@ -171,6 +178,34 @@
     font-size: 16px;
     width: 100% !important;
   }
+  /* Portfolio */
+  .portfolio-container {
+    padding: 24px 15px !important;
+  }
+  .portfolio-top {
+    flex-direction: column;
+  }
+  .pt-wrapper-left {
+    width: 100% !important;
+  }
+  .pt-card {
+    width: 100% !important;
+  }
+  .pt-wrapper-middle {
+    width: 100% !important;
+    height: fit-content;
+    align-items: start !important;
+  }
+  .linebarchartbig {
+    display: none;
+  }
+  .linebarchartsmall {
+    display: block !important;
+    width: 100% !important;
+  }
+  .pt-assets {
+    width: 100% !important;
+  }
 }
 
 @media (max-width: 400px) {
@@ -211,7 +246,22 @@
   .liquidity-wrapper {
     padding: 24px 18px !important;
   }
-
+  /* Portfolio */
+  .pt-wrapper-left,
+  .pt-wrapper-middle,
+  .pt-wrapper-right,
+  .portfolio-bottom {
+    padding: 18px 15px !important;
+  }
+  th,
+  td {
+    padding: 15px 10px !important;
+  }
+  .trade-btn p {
+    font-size: 12px !important;
+    font-weight: 600;
+    line-height: 145%;
+  }
 }
 @media (max-width: 320px) {
   .nav-links-2 .link {
@@ -234,10 +284,28 @@
   }
   th,
   td {
-    padding: 15px 10px !important;
+    padding: 15px 5px !important;
   }
   /* Liquidity */
-  .grid-1{
+  .grid-1 {
     grid-template-columns: auto !important;
-}
+  }
+  /* Portfolio */
+  .pt-1 {
+    flex-direction: column-reverse;
+    align-items: flex-start !important;
+    gap: 1rem !important;
+  }
+  .pt-1-l h3 {
+    font-size: 20px !important;
+  }
+  .pt-card h3 {
+    font-size: 14px !important;
+  }
+  .pt-wrapper-left {
+    padding: 18px 15px !important;
+  }
+  .portfolio-bottom {
+    padding: 18px 12px !important;
+  }
 }

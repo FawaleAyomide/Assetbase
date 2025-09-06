@@ -151,8 +151,7 @@ li {
 }
 
 .wallet,
-.dashboard-container,
-.portfolio {
+.dashboard-container {
   height: 100vh !important;
 }
 .icon{

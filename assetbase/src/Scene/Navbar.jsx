@@ -13,19 +13,7 @@ import { RiUser2Line } from "@remixicon/react";
 import { RiSearch2Line } from "@remixicon/react";
 
 const Navbar = () => {
-  const [burgerClass, setBurgerClass] = useState("burger-bar unclicked");
-  const [menuClass, setMenuClass] = useState("menu hidden");
   const [isMenuClicked, setIsMenuClicked] = useState(false);
-
-  const updateMenu = () => {
-    if (!isMenuClicked) {
-      setBurgerClass("burger-bar clicked");
-      setMenuClass("menu visible");
-    } else {
-      setBurgerClass("burger-bar unclicked");
-      setMenuClass("menu hidden");
-    }
-  };
 
   return (
     <div className="navbar">
@@ -101,28 +89,32 @@ const Navbar = () => {
             </Link>
           </div>
         </div>
-        <div className="hamburger" onclick={updateMenu}>
-        <Hamburger size={25} toggled={isMenuClicked} toggle={setIsMenuClicked} />
+        <div className="hamburger">
+          <Hamburger
+            size={25}
+            toggled={isMenuClicked}
+            toggle={setIsMenuClicked}
+          />
         </div>
-        {isMenuClicked &&
-        <div className="menuClass">
-          <Link className="nav-btn">
-            <RiAddFill size={18} />
-            <p>Connect</p>
-          </Link>
-          <div className="nav-icons">
-            <Link className="icon">
-              <RiNotification3Line size={18} />
+        {isMenuClicked && (
+          <div className="menuClass">
+            <Link className="nav-btn">
+              <RiAddFill size={18} />
+              <p>Connect</p>
             </Link>
-            <Link className="icon">
-              <RiUser2Line size={18} />
-            </Link>
-            <Link className="icon">
-              <RiSearch2Line size={18} />
-            </Link>
+            <div className="nav-icons">
+              <Link className="icon">
+                <RiNotification3Line size={18} />
+              </Link>
+              <Link className="icon">
+                <RiUser2Line size={18} />
+              </Link>
+              <Link className="icon">
+                <RiSearch2Line size={18} />
+              </Link>
+            </div>
           </div>
-        </div>
-        }
+        )}
       </div>
     </div>
   );

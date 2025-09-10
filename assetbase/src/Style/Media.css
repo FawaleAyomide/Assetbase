@@ -1,12 +1,13 @@
 @media (max-width: 1255px) {
   /* portfolio */
   .view-bottom-left .pt-2 {
-  grid-template-columns: auto auto !important;
-  
+    display: grid;
+    grid-template-columns: auto auto !important;
   }
-  .view-bottom-left .pt-card {
-  /* width: 100% !important; */
-  
+  .view-level {
+    display: grid !important;
+    gap: 1rem;
+    grid-template-columns: auto auto !important;
   }
 }
 @media (max-width: 1165px) {
@@ -108,17 +109,39 @@
   .nav-links-2 .active-link {
     flex-direction: column;
   }
-  
 }
 @media (max-width: 900px) {
-  .portfolio-top{
+  .portfolio-top {
     flex-direction: column;
   }
-  
 }
+@media (max-width: 875px) {
+  .view-bottom {
+    flex-direction: column;
+  }
+  .view-bottom-left,
+  .view-bottom-right {
+    width: 100% !important;
+  }
+  .view-bottom-left .pt-2 {
+    grid-template-columns: repeat(auto-fit, minmax(22%, 1fr)) !important;
+  }
+  .view-level {
+    grid-template-columns: repeat(auto-fit, minmax(22%, 1fr)) !important;
+  }
+}
+
 @media (max-width: 785px) {
   .t-1 p {
     width: 100% !important;
+  }
+}
+@media (max-width: 650px) {
+  .view-bottom-left .pt-2 {
+    grid-template-columns: auto auto !important;
+  }
+  .view-level {
+    grid-template-columns: auto auto !important;
   }
 }
 @media (max-width: 600px) {
@@ -217,8 +240,30 @@
   .pt-assets {
     width: 100% !important;
   }
+
+  .view-card-wrapper {
+    padding: 45px 20px !important;
+  }
 }
 
+@media (max-width: 445px) {
+  /* portfolio */
+  .view-top-2 {
+    flex-direction: column;
+    align-items: start !important;
+    gap: 1rem;
+  }
+  .view-wrapper {
+    padding: 100px 10px 50px 10px !important;
+  }
+  .view-trade {
+    width: 100% !important;
+  }
+  .pt {
+  flex-direction: column-reverse;
+  align-items: flex-start !important;
+}
+}
 @media (max-width: 400px) {
   .dashboard {
     padding: 24px 15px;
@@ -273,6 +318,9 @@
     font-weight: 600;
     line-height: 145%;
   }
+  .view-bottom-left .pt-wrapper-left {
+  padding: 0 !important;
+}
 }
 @media (max-width: 320px) {
   .nav-links-2 .link {
@@ -318,5 +366,8 @@
   }
   .portfolio-bottom {
     padding: 18px 12px !important;
+  }
+  .view-wrapper {
+    padding: 300px 45px 50px 45px !important;
   }
 }

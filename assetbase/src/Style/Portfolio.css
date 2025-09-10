@@ -210,7 +210,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 50px 30px;
+  padding: 100px 30px 50px 30px;
+  overflow: auto;
+}
+.view-wrapper::-webkit-scrollbar {
+  width: 0;
 }
 .view-card-wrapper {
   background-color: var(--bg-base);
@@ -390,4 +394,10 @@
 }
 .view-bottom-right tbody {
   background-color: var(--neutral-800);
+}
+.assetstab .small{
+  overflow: hidden;
+}
+.small-tab{
+  overflow: auto;
 }

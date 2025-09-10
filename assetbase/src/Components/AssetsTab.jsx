@@ -114,9 +114,19 @@ function AssetsTab() {
                 {/* Price */}
                 <td>{item.price}</td>
                 {/* Change (24hr) */}
-                <td className={item.change24hr.startsWith('+') ? "profit" : "loss"}>{item.change24hr}</td>
+                <td
+                  className={
+                    item.change24hr.startsWith("+") ? "profit" : "loss"
+                  }
+                >
+                  {item.change24hr}
+                </td>
                 {/* All time */}
-                <td className={item.allTime.startsWith('+') ? "profit" : "loss"}>{item.allTime}</td>
+                <td
+                  className={item.allTime.startsWith("+") ? "profit" : "loss"}
+                >
+                  {item.allTime}
+                </td>
                 {/* dividends */}
                 <td>{item.dividends}</td>
                 {/* Action */}
@@ -158,7 +168,12 @@ function AssetsTab() {
                         </div>
                         <div className="view-top-2">
                           <div className="left-side-text">
-                            <img  src={Landmark} alt="larl logo" width="60" height="60" />
+                            <img
+                              src={Landmark}
+                              alt="larl logo"
+                              width="60"
+                              height="60"
+                            />
                             <div className="first">
                               <p className="name">{item.name}</p>
                               <p className="amount">{item.fullName}</p>
@@ -252,8 +267,7 @@ function AssetsTab() {
                               </div>
                               <div className="view-level-grid">
                                 <div className="vlg-top">
-                                  <img src={arrowup} alt
-                                    ="clock" size={18} />
+                                  <img src={arrowup} alt="clock" size={18} />
                                   <p>24h Low</p>
                                 </div>
                                 <div className="vlg-bottom">
@@ -393,6 +407,11 @@ function AssetsTab() {
                   )}
                 </AnimatePresence>
                 {/* Overlay ends */}
+                <td>
+                  <div className="trade-btn">
+                    <p>Trade</p>
+                  </div>
+                </td>
               </tr>
             ))}
           </tbody>
@@ -500,7 +519,6 @@ function AssetsTab() {
   );
 }
 export default AssetsTab;
-
 
 //             <tr>
 //               <td>1</td>
@@ -945,7 +963,7 @@ export default AssetsTab;
 //           </tbody>
 //         </table>
 //       </div>
-      
+
 //     </div>
 //   );
 // }

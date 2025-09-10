@@ -1,11 +1,17 @@
-import { Outlet } from "react-router-dom"
+import { Outlet } from "react-router-dom";
+import Navbar from "./Navbar";
+import NavMob from "./NavMob";
 
 const Home = () => {
   return (
-    <div>
-        <Outlet />
-    </div>
-  )
-}
+    <>
+      <Navbar />
+      <Outlet />
+      <div className="navmob">
+        <NavMob />
+      </div>
+    </>
+  );
+};
 
-export default Home
+export default Home;

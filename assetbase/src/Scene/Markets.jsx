@@ -1,8 +1,6 @@
 
 // import { Outlet } from "react-router-dom";
 import { useState, useEffect } from "react";
-import Navbar from "./Navbar";
-import NavMob from "./NavMob";
 import fire from "../Images/Fire.svg";
 import landmark from "../Images/Landmark.svg";
 import favicon from "../Images/Favicon.svg"
@@ -44,8 +42,7 @@ const Markets = () => {
   }
 
   return (
-    <div>
-      <Navbar />
+    <>
       {/* <Outlet /> */}
       <div className="markets">
         <div className="header">
@@ -587,10 +584,7 @@ const Markets = () => {
           </div>
         </div>
       </div>
-      <div className="navmob">
-        <NavMob />
-      </div>
-    </div>
+    </>
   );
 };
 

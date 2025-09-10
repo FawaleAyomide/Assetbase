@@ -1,6 +1,4 @@
 import { Link } from "react-router-dom";
-import Navbar from "./Navbar";
-import NavMob from "./NavMob";
 import flag from "../Images/Flag.svg";
 import arrowDownLight from "../Images/Arrow-down-light.svg";
 import Eyeoff from "../Images/Eye-off.svg";
@@ -19,7 +17,6 @@ import referral from "../Images/Referral.svg";
 const Dashboard = () => {
   return (
     <div className="dashboard-container">
-      <Navbar />
       <div className="dashboard">
         <div className="dashboard-wrapper">
           <div className="pleasantry">
@@ -643,9 +640,6 @@ const Dashboard = () => {
             </div>
           </div>
         </div>
-      </div>
-      <div className="navmob">
-        <NavMob />
       </div>
     </div>
   );

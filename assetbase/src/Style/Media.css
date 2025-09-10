@@ -1,3 +1,14 @@
+@media (max-width: 1255px) {
+  /* portfolio */
+  .view-bottom-left .pt-2 {
+  grid-template-columns: auto auto !important;
+  
+  }
+  .view-bottom-left .pt-card {
+  /* width: 100% !important; */
+  
+  }
+}
 @media (max-width: 1165px) {
   /* navbar */
   .navbar .content .right {

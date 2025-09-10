@@ -1,5 +1,3 @@
-import Navbar from "./Navbar";
-import NavMob from "./NavMob";
 import flag from "../Images/Flag.svg";
 import { NavLink, Outlet } from "react-router-dom";
 import arrowDownLight from "../Images/Arrow-down-light.svg";
@@ -8,9 +6,9 @@ import linebarchartsmall from "../Images/Linebarchartsmall.svg";
 import piechart from "../Images/Piechart.svg";
 
 const Portfolio = () => {
+
   return (
-    <div>
-      <Navbar />
+    <>
       <div className="portfolio">
         <div className="portfolio-container">
           <div className="header">
@@ -52,8 +50,6 @@ const Portfolio = () => {
                       <h3>+ $50,000.45</h3>
                       <p className="profit">+100.25%</p>
                     </div>
-                  </div>
-                  <div className="pt pt-3">
                     <div className="pt-card pt-3-l">
                       <p>Avg. Buy Price</p>
                       <h3>$9,100.45</h3>
@@ -62,6 +58,8 @@ const Portfolio = () => {
                       <p>Cost Basis</p>
                       <h3>$50,000.45</h3>
                     </div>
+                  </div>
+                  <div className="pt pt-3">
                   </div>
                 </div>
               </div>
@@ -120,11 +118,7 @@ const Portfolio = () => {
           </div>
         </div>
       </div>
-
-      <div className="navmob">
-        <NavMob />
-      </div>
-    </div>
+    </>
   );
 };
 

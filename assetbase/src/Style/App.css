@@ -150,8 +150,7 @@ li {
   z-index: 6;
 }
 
-.wallet,
-.dashboard-container {
+.wallet {
   height: 100vh !important;
 }
 .icon{

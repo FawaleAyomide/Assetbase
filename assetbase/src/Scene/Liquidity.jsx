@@ -1,7 +1,5 @@
 import { useState } from "react";
 import { NavLink, Outlet } from "react-router-dom";
-import Navbar from "./Navbar";
-import NavMob from "./NavMob";
 import GradientLine from "../Images/Gradient Lines.svg";
 import LogoBg from "../Images/LogoBg.svg";
 import { RiBox3Line } from "@remixicon/react";
@@ -12,8 +10,7 @@ const Liquidity = () => {
 
 
   return (
-    <div>
-      <Navbar />
+    <>
       <div className="liquidity-container">
         <div className="header">
           <p>Liquidity</p>
@@ -69,9 +66,8 @@ const Liquidity = () => {
         </div>
       </div>
       <div className="navmob">
-        <NavMob />
       </div>
-    </div>
+    </>
   );
 };
 

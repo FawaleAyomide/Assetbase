@@ -116,6 +116,13 @@
   }
 }
 @media (max-width: 875px) {
+  .view-wrapper {
+  /* padding: 250px 30px 50px 30px !important; */
+  align-items: start !important;
+}
+  .view-card-wrapper {
+  height: fit-content !important;
+}
   .view-bottom {
     flex-direction: column;
   }

@@ -63,6 +63,11 @@ li {
   text-decoration: none;
   border-bottom: 1px solid var(--assetbase-orange);
   color: var(--assetbase-orange);
+  z-index: 1;
+}
+.active-liq{
+  z-index: 1 !important;
+
 }
 .ex {
   border-radius: 8px;

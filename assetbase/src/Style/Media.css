@@ -101,6 +101,7 @@
     justify-content: space-between;
     width: 100%;
     padding: 18px 24px 18px 24px;
+    z-index: 7;
   }
   .nav-links-2 .link {
     flex-direction: column;
@@ -248,6 +249,9 @@
     width: 100% !important;
   }
 
+  .view-wrapper {
+    padding: 100px 10px 50px 10px !important;
+  }
   .view-card-wrapper {
     padding: 45px 20px !important;
   }
@@ -259,9 +263,6 @@
     flex-direction: column;
     align-items: start !important;
     gap: 1rem;
-  }
-  .view-wrapper {
-    padding: 100px 10px 50px 10px !important;
   }
   .view-trade {
     width: 100% !important;
@@ -373,8 +374,5 @@
   }
   .portfolio-bottom {
     padding: 18px 12px !important;
-  }
-  .view-wrapper {
-    padding: 300px 45px 50px 45px !important;
   }
 }

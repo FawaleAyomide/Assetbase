@@ -28,9 +28,8 @@ const Navbar = () => {
           </ul>
           <div className="nav-links-1">
             <NavLink
-              to="/"
+              to=""
               end
-              // to="/dashboard"
               className={({ isActive }) => (isActive ? "active-link" : "link")}
             >
               <RiLayoutGridLine size={18} />
@@ -81,7 +80,7 @@ const Navbar = () => {
             <Link className="icon">
               <RiNotification3Line size={18} />
             </Link>
-            <Link className="icon">
+            <Link to="account" className="icon">
               <RiUser2Line size={18} />
             </Link>
             <Link className="icon">

@@ -3,6 +3,7 @@
     --card-bg: rgba(22, 25, 34, 1);
     --bg-card: rgba(22, 25, 34, 1);
     --bg-surface: rgba(32, 35, 45, 1);
+    --sidebar-bg: rgba(255, 255, 255, 0.04);
     --light-bg: rgba(34, 36, 49, 1);
     --ticker-green: rgba(56, 199, 147, 1);
     --ticker-red: rgba(223, 28, 65, 1);
@@ -14,6 +15,7 @@
     --grey-text: rgba(205, 208, 213, 0.349);
     --brown-bg: rgba(29, 21, 18, 1);
     --neutral-800: rgba(22, 25, 34, 1);
+    --neutral-600: rgba(49, 53, 63, 1);
     --neutral-500: rgba(82, 88, 102, 1);
     --neutral-300: rgba(205, 208, 213, 1);
     --neutral-200: rgba(205, 208, 213, 0.3);

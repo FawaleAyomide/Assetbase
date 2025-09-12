@@ -1,4 +1,5 @@
 import './Style/App.css';
+import './Style/Account.css';
 import './Style/Root.css';
 import './Style/Dashboard.css';
 import './Style/Media.css';
